@@ -53,23 +53,23 @@ int exercicio5() {
 }
 
 // BLOCO 2 – FUNÇÕES
-
+int exercício6()
 int soma(int a, int b) {
     return a + b;
 }
-
+int exercício7()
 bool ehPar(int n) {
     return n % 2 == 0;
 }
-
+int exercício8()
 void mostrarMensagem() {
     cout << "Bem-vindo ao programa!" << endl;
 }
-
+int exrcício9()
 int quadrado(int n) {
     return n * n;
 }
-
+int exercício10()
 float maior(float a, float b) {
     return (a > b) ? a : b;
 }
@@ -82,24 +82,24 @@ int exercicio11() {
     cout << *p << " - Endereco: " << p << endl;
     return 0;
 }
-
+int exercício12()
 void dobrar(int* p) {
     *p *= 2;
 }
-
+int exercIcio13()
 void trocar(int* a, int* b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
-
+int exercício14()
 void mostrarVetor(int* v, int tamanho) {
     for (int i = 0; i < tamanho; i++) {
         cout << v[i] << " ";
     }
     cout << endl;
 }
-
+int exercício15()
 void aprovado(float* nota) {
     if (*nota >= 7)
         cout << "Aprovado" << endl;
@@ -108,32 +108,32 @@ void aprovado(float* nota) {
 }
 
 // BLOCO 4 – PARÂMETROS E ARGUMENTOS
-
+int exercício16()
 void trocarRef(int &a, int &b) {
     int temp = a;
     a = b;
     b = temp;
 }
-
+int exercício17()
 void alterarValores(int valor, int &ref) {
     valor = 10;
     ref = 20;
 }
-
+int exercício18()
 void incrementar(int* p) {
     (*p)++;
 }
-
+int exercício19()
 float media(float a, float b, float c) {
     return (a + b + c) / 3;
 }
-
+int exercício20()
 void situacao(string nome, float nota) {
     cout << nome << (nota >= 7 ? " está aprovado" : " está reprovado") << endl;
 }
 
 // BLOCO 5 – COMBINAÇÃO DE CONCEITOS
-
+int exercício21()
 float calcularAreaRetangulo(float base, float altura) {
     return base * altura;
 }
@@ -145,7 +145,7 @@ int exercicio22() {
     cout << "Salario final: " << salario + BONUS << endl;
     return 0;
 }
-
+int exercício23()
 // Simulação do funcoes.h omitida (precisa de dois arquivos)
 
 float calcularMediaVetor(int* v, int tamanho) {
@@ -153,13 +153,13 @@ float calcularMediaVetor(int* v, int tamanho) {
     for (int i = 0; i < tamanho; i++) soma += v[i];
     return soma / (float)tamanho;
 }
-
+int exercício24()
 void inverterSinal(int &valor) {
     valor = -valor;
 }
 
 // BLOCO 6 – EXERCÍCIOS APLICADOS
-
+int exercício25()
 void menu() {
     int op, a, b;
     cin >> op >> a >> b;
@@ -167,27 +167,27 @@ void menu() {
     else if (op == 2) cout << a - b;
     else if (op == 3) cout << a * b;
 }
-
+int exercício26()
 float saldo = 1000;
 
 void saque(float valor) {
     if (valor <= saldo) saldo -= valor;
 }
-
+int exercício27()
 void deposito(float valor) {
     saldo += valor;
 }
-
+int exercício28()
 void consulta() {
     cout << saldo << endl;
 }
-
+int exercício29()
 struct Pessoa {
     string nome;
     int idade;
     float altura;
 };
-
+int exercício30()
 void mostrarPessoa(Pessoa* p) {
     cout << p->nome << " " << p->idade << " " << p->altura << endl;
 }
@@ -207,9 +207,6 @@ void trocarValores(void* a, void* b, string tipo) {
         *y = temp;
     }
 }
-
-// A questão 30 requer múltiplos arquivos e #pragma once, precisa ser feita fora
-
 int main() {
     // Chamar aqui a função que quiser testar
     return 0;
